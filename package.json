@@ -1,12 +1,15 @@
 {
-  "name": "react-ts",
+  "name": "portfolio",
+  "homepage": "https://btallitsch.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "daisyui": "^4.12.13",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.9.1",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.5.3",
